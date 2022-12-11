@@ -23,6 +23,8 @@ const Header = ({ type }) => {
       key: "selection",
     },
   ]);
+  const [destination, setDestination] = useState("");
+  const navigate = useNavigate();
   const [openDate, setOpenDate] = useState(false);
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
@@ -30,8 +32,10 @@ const Header = ({ type }) => {
     children: 0,
     room: 1,
   });
+  const handleSearch = () => {
+    navigate("/hotels", { state: { destination, date, options } });
+  };
 
-  const handleSearch = () => {};
   const handleOption = (name, operation) => {
     setOptions((prev) => {
       return {
@@ -83,7 +87,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="Where are you going?"
                   className="headerSearchInput"
-                  // onChange={(e) => setDestination(e.target.value)}
+                  onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
               <div className="headerSearchItem">
