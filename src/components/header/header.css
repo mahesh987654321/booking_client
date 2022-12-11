@@ -21,6 +21,9 @@
   align-items: center;
   gap: 10px;
 }
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
 .headerListItem.active {
   border: 1px solid white;
   padding: 10px;

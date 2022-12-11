@@ -13,7 +13,7 @@ const Home = () => {
       <div>
         <Navbar />
         <Header />
-        {/* <div className="homeContainer">
+        <div className="homeContainer">
           <Featured />
           <h1 className="homeTitle">Browse by property type</h1>
           <PropertyList />
@@ -21,7 +21,7 @@ const Home = () => {
           <FeaturedProject />
           <Maillist />
           <Footer />
-        </div> */}
+        </div>
       </div>
     </div>
   );
