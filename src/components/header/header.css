@@ -70,4 +70,64 @@
   position: absolute;
   top: 50px;
   z-index: 2;
+  box-shadow: 9px 10px 17px 2px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 9px 10px 17px 2px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 9px 10px 17px 2px rgba(0, 0, 0, 0.49);
+}
+.option {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  padding: 3.5rem;
+}
+.optionItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  gap: 1rem;
+}
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid #0071c2; */
+  border: none;
+  /* color: #0071c2; */
+  cursor: pointer;
+  background-color: white;
+}
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+.optionFlex {
+  display: flex;
+  gap: 1rem;
+  border: 2px solid gray;
+}
+.optionBtn {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  cursor: pointer;
+  border-color: #3daeff;
+  font-weight: bold;
+  color: #3daeff;
+}
+.optionBtn:hover {
+  transition: 0.5s;
+  background: rgba(0, 113, 194, 0.24);
 }
