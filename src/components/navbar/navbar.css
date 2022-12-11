@@ -1,0 +1,44 @@
+.navbar {
+  height: 50px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.logo {
+  font-weight: 500;
+}
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
+.navItems {
+  display: flex;
+  gap: 1.7rem;
+  align-items: center;
+}
+.listProperty {
+  padding: 4px 10px 5px 10px;
+  border: 1px solid white;
+}
+span {
+  cursor: pointer;
+}
+
+/* .spn {
+  display: flex;
+  gap: 2rem;
+} */
+/* .spn span:hover {
+  background-color: aqua;
+} */
